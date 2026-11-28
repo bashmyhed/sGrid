@@ -1,11 +1,18 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: system-ui, sans-serif; background: #f5f7fa; color: #1a202c; }
+@import "tailwindcss";
 
-.navbar { display: flex; align-items: center; gap: 2rem; padding: 0.75rem 1.5rem; background: #b91c1c; color: #fff; }
-.navbar .brand { font-weight: 700; font-size: 1.2rem; }
-.navbar ul { display: flex; flex-wrap: wrap; gap: 1rem; list-style: none; }
-.navbar a { color: #fff; text-decoration: none; padding: 0.3rem 0.6rem; border-radius: 4px; opacity: 0.85; }
-.navbar a:hover { opacity: 1; }
-.navbar a.active { background: rgba(255, 255, 255, 0.2); opacity: 1; }
+@theme {
+  /* Teal (primary) */
+  --color-brand-50: #e6faf8;
+  --color-brand-100: #c2f2ee;
+  --color-brand-200: #8fe6df;
+  --color-brand-500: #00b9ad;
+  --color-brand-600: #00a095;
+  --color-brand-700: #00827a;
+  --color-brand-900: #00433f;
 
-.container { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+  /* Navy (secondary) */
+  --color-navy-50: #eef1f9;
+  --color-navy-600: #33498f;
+  --color-navy-700: #2a3d7c;
+  --color-navy-900: #1b2a5c;
+}
