@@ -200,7 +200,7 @@ export default function Home() {
             to="/public"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-red-600 px-7 py-3 font-semibold text-white shadow-lg hover:bg-red-700"
           >
-            <Siren size={20} /> Open Citizen View
+            <Users size={20} /> Open Citizen View
           </Link>
         </div>
       </section>
