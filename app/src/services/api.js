@@ -1,4 +1,4 @@
-import { hospitals } from './mockData'
+import { hospitals, ambulances } from './mockData'
 
 // Backend ready hole USE_MOCK = false koro
 const USE_MOCK = true
@@ -14,4 +14,9 @@ async function request(path) {
 export async function getHospitals() {
   if (USE_MOCK) return hospitals
   return request('/api/hospitals')
+}
+
+export async function getAmbulances() {
+  if (USE_MOCK) return ambulances
+  return request('/api/ambulances')
 }
