@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
+import { Hospital, Ambulance, MapPin, Users, TrendingUp, ClipboardList } from 'lucide-react'
 
 const features = [
-  { icon: '🏥', title: 'Hospital Resources', desc: 'Live bed, ICU and oxygen availability across hospitals.', to: '/hospitals' },
-  { icon: '🚑', title: 'Ambulance Tracking', desc: 'See which ambulances are free, busy or on the way.', to: '/ambulances' },
-  { icon: '📍', title: 'Smart Matching', desc: 'Nearest suitable hospital and ambulance for every incident, using Haversine distance.', to: '/incidents' },
-  { icon: '👥', title: 'Citizen View', desc: 'A simple public page to find help quickly in an emergency.', to: '/public' },
-  { icon: '📊', title: 'Analytics', desc: 'Trends and insights to plan resources better.', to: '/analytics' },
-  { icon: '📋', title: 'Audit Trail', desc: 'Every update is logged for accountability.', to: '/audit' },
+  { icon: Hospital, title: 'Hospital Resources', desc: 'Live bed, ICU and oxygen availability across hospitals.', to: '/hospitals' },
+  { icon: Ambulance, title: 'Ambulance Tracking', desc: 'See which ambulances are free, busy or on the way.', to: '/ambulances' },
+  { icon: MapPin, title: 'Smart Matching', desc: 'Nearest suitable hospital and ambulance for every incident, using Haversine distance.', to: '/incidents' },
+  { icon: Users, title: 'Citizen View', desc: 'A simple public page to find help quickly in an emergency.', to: '/public' },
+  { icon: TrendingUp, title: 'Analytics', desc: 'Trends and insights to plan resources better.', to: '/analytics' },
+  { icon: ClipboardList, title: 'Audit Trail', desc: 'Every update is logged for accountability.', to: '/audit' },
 ]
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
               className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-md"
             >
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-100 text-xl">
-                {f.icon}
+                <f.icon size={24} className="text-brand-700" />
               </div>
               <h3 className="text-lg font-semibold text-navy-900">{f.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{f.desc}</p>
